@@ -4,18 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Activity.MainActivity"
+    tools:context=".View.Activity.InputActivity"
     android:orientation="vertical">
-    <Button
-        android:id="@+id/inputButton"
+    <EditText
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Input data"/>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/listUser"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/address"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </android.support.v7.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"/>
 
 </LinearLayout>

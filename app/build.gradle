@@ -23,7 +23,7 @@ apply plugin: 'com.android.application'
 
 //database verion
 greendao {
-    schemaVersion 2
+    schemaVersion 4
 }
 
 dependencies {
@@ -32,6 +32,10 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     //import greenDAO
     implementation 'org.greenrobot:greendao:3.2.2'
+
+
+    implementation 'com.android.support:recyclerview-v7:28.0.+'
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
