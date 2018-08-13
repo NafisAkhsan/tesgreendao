@@ -25,12 +25,12 @@ public class Repository {
     }
 
 
-    public void deleteData(final long id) {
+    public void deleteData( long id) {
         userDao.deleteByKey(id);
     }
 
 
-    public void addData(final User user) {
+    public void addData( User user) {
         userDao.insert(user);
     }
 
