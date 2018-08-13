@@ -17,11 +17,11 @@ android {
         }
     }
 }
-
+//Apply greenDAO plugin
 apply plugin: 'org.greenrobot.greendao'
 apply plugin: 'com.android.application'
 
-
+//database verion
 greendao {
     schemaVersion 2
 }
@@ -30,6 +30,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    //import greenDAO
     implementation 'org.greenrobot:greendao:3.2.2'
 
     testImplementation 'junit:junit:4.12'
